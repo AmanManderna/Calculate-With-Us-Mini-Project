@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculate With Us</title>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo"><a href="#"><img src="logo.jpg" alt="loding..."></a></div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#container">Calculator</a></li>
+        <li><a href="#contact-info">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section class="background">
+    <img src="background.png" alt="">
+    <h1>Calculator</h1>
+  </section>
+
+  <section id="container">
+    <div class="calculator">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <table>
+        <tr>
+          <td colspan="2"><button data-all-clear class="col-two red_button">AC</button></td>
+          <td><button data-delete class="red_button">DEL</button></td>
+          <td><button data-operation>/</button></td>
+        </tr>
+        <tr>
+          <td><button data-number>7</button></td>
+          <td><button data-number>8</button></td>
+          <td><button data-number>9</button></td>
+          <td><button data-operation>*</button></td>
+        </tr>
+        <tr>
+          <td><button data-number>4</button></td>
+          <td><button data-number>5</button></td>
+          <td><button data-number>6</button></td>
+          <td><button data-operation>-</button></td>
+        </tr>
+        <tr>
+          <td><button data-number>1</button></td>
+          <td><button data-number>2</button></td>
+          <td><button data-number>3</button></td>
+          <td><button data-operation>+</button></td>
+        </tr>
+        <tr>
+
+          <td><button data-number>0</button></td>
+          <td><button data-number>.</button></td>
+          <td colspan="2"><button data-equals class="col-two">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="about-section">
+    <div class="about">About</div>
+    <div id="contact-info">
+        Name: AMAN | Contact: <a href=" https://mail.google.com/mail/u/0/#inbox"> Amanmanderna98765@gmail.com</a> | Phone: +91 93065<span id="number">45670</span>
+       </div>
+    <div class="about-description">
+        <p>Welcome to Calculate With Us, your go-to destination for quick and efficient calculations! Our user-friendly
+             platform combines a powerful calculator to simplify your mathematical tasks.</p>
+    </div>
+</section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
